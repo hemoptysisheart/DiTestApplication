@@ -1,6 +1,8 @@
 <resources>
     <string name="app_name">DI Test</string>
 
+    <string name="label_refresh">REFRESH</string>
+
     <string name="activity_case1_title">Case #1</string>
     <string name="activity_case1_description">Activity -> Compose -> ViewModel -> Model</string>
 
@@ -9,6 +11,4 @@
 
     <string name="activity_case3_title">Case #3</string>
     <string name="activity_case3_description">1. Activity -> Compose -> Compose -> ViewModel -> Model\n2. Refresh model.</string>
-
-    <string name="case2_refresh_label">REFRESH</string>
 </resources>
