@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">DI Test</string>
+    <string name="title_activity_sub_component">SubComponentActivity</string>
 </resources>
