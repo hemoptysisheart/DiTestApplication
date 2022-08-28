@@ -1,6 +1,7 @@
-package com.github.hemoptysisheart.ditestapplication.app
+package com.github.hemoptysisheart.ditestapplication.app.configuration
 
 import android.util.Log
+import com.github.hemoptysisheart.ditestapplication.app.model.Case1Model
 import dagger.Module
 import dagger.Provides
 import dagger.hilt.InstallIn
@@ -14,8 +15,8 @@ class ModuleConfiguration {
     }
 
     @Provides
-    fun provideTestModel(): TestModel {
-        val model = TestModel()
+    fun provideTestModel(): Case1Model {
+        val model = Case1Model()
         Log.v(TAG, "#provideTestModel return : $model")
         return model
     }

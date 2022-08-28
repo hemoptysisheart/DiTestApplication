@@ -15,20 +15,18 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
-import androidx.lifecycle.viewmodel.compose.viewModel
-import com.github.hemoptysisheart.ditestapplication.app.TestViewModel
 import com.github.hemoptysisheart.ditestapplication.app.ui.theme.DiTestApplicationTheme
 import dagger.hilt.android.AndroidEntryPoint
 
 @AndroidEntryPoint
-class MainActivity : ComponentActivity() {
+class LauncherActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContent {
             DiTestApplicationTheme {
                 // A surface container using the 'background' color from the theme
                 Surface(modifier = Modifier.fillMaxSize(), color = MaterialTheme.colors.background) {
-                    TestCompose()
+                    LauncherCompose()
                 }
             }
         }
@@ -36,27 +34,28 @@ class MainActivity : ComponentActivity() {
 }
 
 @Composable
-fun TestCompose(viewModel: TestViewModel = viewModel()) {
+fun LauncherCompose() {
     val context = LocalContext.current
     Column(
         modifier = Modifier.fillMaxSize(),
         horizontalAlignment = Alignment.CenterHorizontally,
         verticalArrangement = Arrangement.Center
     ) {
-        Text(text = viewModel.text())
-        Spacer(modifier = Modifier.height(20.dp))
-        Button(onClick = {
-            context.startActivity(Intent(context, SubComponentActivity::class.java))
-        }) {
-            Text(text = "SubComponent")
+        Button(onClick = { context.startActivity(Intent(context, Case1Activity::class.java)) }) {
+            Text(text = "Case #1")
         }
+        Spacer(modifier = Modifier.height(24.dp))
+        Button(onClick = { context.startActivity(Intent(context, Case2Activity::class.java)) }) {
+            Text(text = "Case #2")
+        }
+        Spacer(modifier = Modifier.height(24.dp))
     }
 }
 
 @Preview(showBackground = true)
 @Composable
-fun TestComposePreview() {
+fun LauncherComposePreview() {
     DiTestApplicationTheme {
-        TestCompose()
+        LauncherCompose()
     }
 }

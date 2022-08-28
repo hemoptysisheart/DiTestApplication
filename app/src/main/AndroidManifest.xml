@@ -13,20 +13,23 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.DiTestApplication">
         <activity
-            android:name=".app.activity.SubComponentActivity"
-            android:exported="false"
-            android:label="@string/title_activity_sub_component"
-            android:theme="@style/Theme.DiTestApplication" />
-        <activity
-            android:name=".app.activity.MainActivity"
+            android:name=".app.activity.LauncherActivity"
             android:exported="true"
             android:theme="@style/Theme.DiTestApplication">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity
+            android:name=".app.activity.Case1Activity"
+            android:exported="false"
+            android:label="@string/activity_case1_title"
+            android:theme="@style/Theme.DiTestApplication" />
+        <activity
+            android:name=".app.activity.Case2Activity"
+            android:exported="false"
+            android:label="@string/activity_case2_title"
+            android:theme="@style/Theme.DiTestApplication" />
     </application>
-
 </manifest>

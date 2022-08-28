@@ -1,4 +1,11 @@
 <resources>
     <string name="app_name">DI Test</string>
-    <string name="title_activity_sub_component">SubComponentActivity</string>
+
+    <string name="activity_case1_title">Case #1</string>
+    <string name="activity_case1_description">Activity -> Compose -> ViewModel</string>
+
+    <string name="activity_case2_title">Case #2</string>
+    <string name="activity_case2_description">1. Activity -> Compose -> Compose -> ViewModel\n2. Refresh VM</string>
+
+    <string name="case2_refresh_label">REFRESH</string>
 </resources>
