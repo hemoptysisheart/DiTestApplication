@@ -14,13 +14,13 @@ import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import androidx.lifecycle.viewmodel.compose.viewModel
 import com.github.hemoptysisheart.ditestapplication.R
-import com.github.hemoptysisheart.ditestapplication.app.viewmodel.SubComponentViewModel
+import com.github.hemoptysisheart.ditestapplication.app.viewmodel.Case2ViewModel
 import java.time.format.DateTimeFormatter
 
 const val TAG = "SubComponent"
 
 @Composable
-fun Case2SubComponent(viewModel: SubComponentViewModel = viewModel()) {
+fun Case2SubComponent(viewModel: Case2ViewModel = viewModel()) {
     val timestamp = remember { mutableStateOf(viewModel.timestamp) }
     Column(
         modifier = Modifier.fillMaxSize(),

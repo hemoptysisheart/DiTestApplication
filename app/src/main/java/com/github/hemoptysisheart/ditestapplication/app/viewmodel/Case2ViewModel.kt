@@ -7,9 +7,9 @@ import java.time.Instant
 import javax.inject.Inject
 
 @HiltViewModel
-class SubComponentViewModel @Inject constructor() : ViewModel() {
+class Case2ViewModel @Inject constructor() : ViewModel() {
     companion object {
-        val TAG = SubComponentViewModel::class.simpleName
+        val TAG = Case2ViewModel::class.simpleName
     }
 
     var timestamp = Instant.now()
