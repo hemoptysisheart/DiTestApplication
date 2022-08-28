@@ -1,4 +1,4 @@
-package com.github.hemoptysisheart.ditestapplication
+package com.github.hemoptysisheart.ditestapplication.app.activity
 
 import android.os.Bundle
 import androidx.activity.ComponentActivity
@@ -10,7 +10,7 @@ import androidx.compose.material.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
-import com.github.hemoptysisheart.ditestapplication.ui.theme.DiTestApplicationTheme
+import com.github.hemoptysisheart.ditestapplication.app.ui.theme.DiTestApplicationTheme
 
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
