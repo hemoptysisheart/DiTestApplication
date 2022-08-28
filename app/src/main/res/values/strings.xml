@@ -11,4 +11,7 @@
 
     <string name="activity_case3_title">Case #3</string>
     <string name="activity_case3_description">1. Activity -> Compose -> Compose -> ViewModel -> Model\n2. Refresh model.</string>
+
+    <string name="activity_case4_title">Case #4</string>
+    <string name="activity_case4_description">Activity -> Compose -> Compose -> ViewModel -> Model -> SharedPreference</string>
 </resources>

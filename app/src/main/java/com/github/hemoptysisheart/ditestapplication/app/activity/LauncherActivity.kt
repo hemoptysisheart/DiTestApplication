@@ -54,6 +54,10 @@ fun LauncherCompose() {
         Button(onClick = { context.startActivity(Intent(context, Case3Activity::class.java)) }) {
             Text(text = stringResource(R.string.activity_case3_title))
         }
+        Spacer(modifier = Modifier.height(24.dp))
+        Button(onClick = { context.startActivity(Intent(context, Case4Activity::class.java)) }) {
+            Text(text = stringResource(R.string.activity_case4_title))
+        }
     }
 }
 
