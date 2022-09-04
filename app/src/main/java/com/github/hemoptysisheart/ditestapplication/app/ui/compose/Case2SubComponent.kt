@@ -17,10 +17,10 @@ import com.github.hemoptysisheart.ditestapplication.R
 import com.github.hemoptysisheart.ditestapplication.app.viewmodel.Case2ViewModel
 import java.time.format.DateTimeFormatter
 
+private const val TAG = "Case2SubComponent"
 
 @Composable
 fun Case2SubComponent(viewModel: Case2ViewModel = viewModel()) {
-    val TAG = "Case2SubComponent"
     val timestamp = remember { mutableStateOf(viewModel.timestamp) }
     Column(
         modifier = Modifier.fillMaxSize(),

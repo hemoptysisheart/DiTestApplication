@@ -16,6 +16,7 @@ import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import com.github.hemoptysisheart.ditestapplication.R
+import com.github.hemoptysisheart.ditestapplication.app.ui.compose.Case4SubComponent
 import com.github.hemoptysisheart.ditestapplication.app.ui.theme.DiTestApplicationTheme
 import dagger.hilt.android.AndroidEntryPoint
 
@@ -44,12 +45,13 @@ fun Case4Layout() {
         Text(text = stringResource(R.string.activity_case4_title))
         Spacer(modifier = Modifier.height(12.dp))
         Text(text = stringResource(R.string.activity_case4_description))
+        Case4SubComponent()
     }
 }
 
 @Preview(showBackground = true)
 @Composable
-fun DefaultPreview() {
+fun Case4LayoutPreview() {
     DiTestApplicationTheme {
         Case4Layout()
     }
