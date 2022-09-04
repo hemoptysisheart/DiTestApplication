@@ -17,7 +17,13 @@ import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import com.github.hemoptysisheart.ditestapplication.R
 import com.github.hemoptysisheart.ditestapplication.app.ui.theme.DiTestApplicationTheme
+import dagger.hilt.android.AndroidEntryPoint
 
+/**
+ * 1. Activity -> Compose -> Compose -> ViewModel -> Model -> SharedPreference
+ * 2. `SharedPreferences`를 사용한 데이터 변경.
+ */
+@AndroidEntryPoint
 class Case4Activity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)

@@ -20,6 +20,10 @@ import com.github.hemoptysisheart.ditestapplication.app.ui.compose.Case2SubCompo
 import com.github.hemoptysisheart.ditestapplication.app.ui.theme.DiTestApplicationTheme
 import dagger.hilt.android.AndroidEntryPoint
 
+/**
+ * 1. Activity -> Compose -> Compose -> ViewModel -> Model 의존성을 가지고 모델이 제공하는 값을 화면에 출력하기.
+ * 2. 유저 인터렉션으로 ViewModel의 속성 변경하기.
+ */
 @AndroidEntryPoint
 class Case2Activity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {

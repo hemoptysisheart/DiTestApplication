@@ -19,6 +19,9 @@ import com.github.hemoptysisheart.ditestapplication.app.ui.theme.DiTestApplicati
 import com.github.hemoptysisheart.ditestapplication.app.viewmodel.Case1ViewModel
 import dagger.hilt.android.AndroidEntryPoint
 
+/**
+ * Activity -> Compose -> ViewModel -> Model 의존성을 가지고 모델이 제공하는 값을 화면에 출력하기.
+ */
 @AndroidEntryPoint
 class Case1Activity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {

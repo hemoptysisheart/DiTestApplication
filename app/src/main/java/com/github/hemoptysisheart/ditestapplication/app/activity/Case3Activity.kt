@@ -20,6 +20,10 @@ import com.github.hemoptysisheart.ditestapplication.app.ui.compose.Case3SubCompo
 import com.github.hemoptysisheart.ditestapplication.app.ui.theme.DiTestApplicationTheme
 import dagger.hilt.android.AndroidEntryPoint
 
+/**
+ * 1. Activity -> Compose -> Compose -> ViewModel -> Model
+ * 2. 유저 인터렉션으로 ViewModel을 거쳐 Model 속성값 변경.
+ */
 @AndroidEntryPoint
 class Case3Activity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
