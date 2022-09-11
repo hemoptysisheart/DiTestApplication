@@ -18,6 +18,7 @@
             android:theme="@style/Theme.DiTestApplication">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
+
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
@@ -40,6 +41,11 @@
             android:name=".app.activity.Case4Activity"
             android:exported="false"
             android:label="@string/activity_case4_title"
+            android:theme="@style/Theme.DiTestApplication" />
+        <activity
+            android:name=".app.activity.Case5Activity"
+            android:exported="false"
+            android:label="@string/activity_case5_title"
             android:theme="@style/Theme.DiTestApplication" />
     </application>
 </manifest>

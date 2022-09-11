@@ -8,6 +8,8 @@ import androidx.security.crypto.MasterKey
 import com.github.hemoptysisheart.ditestapplication.app.model.Case1Model
 import com.github.hemoptysisheart.ditestapplication.app.model.Case3Model
 import com.github.hemoptysisheart.ditestapplication.app.model.Case4Model
+import com.github.hemoptysisheart.ditestapplication.domain.Case5Domain
+import com.github.hemoptysisheart.ditestapplication.model.Case5Model
 import dagger.Module
 import dagger.Provides
 import dagger.hilt.InstallIn
@@ -47,4 +49,7 @@ class ModuleConfiguration {
 
     @Provides
     fun provideCase4Model(sharedPreferences: SharedPreferences) = Case4Model(sharedPreferences)
+
+    @Provides
+    fun provideCase5Model(sharedPreferences: SharedPreferences): Case5Domain = Case5Model(sharedPreferences)
 }

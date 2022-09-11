@@ -46,17 +46,21 @@ fun LauncherCompose() {
         Button(onClick = { context.startActivity(Intent(context, Case1Activity::class.java)) }) {
             Text(text = stringResource(R.string.activity_case1_title))
         }
-        Spacer(modifier = Modifier.height(24.dp))
+        Spacer(modifier = Modifier.height(12.dp))
         Button(onClick = { context.startActivity(Intent(context, Case2Activity::class.java)) }) {
             Text(text = stringResource(R.string.activity_case2_title))
         }
-        Spacer(modifier = Modifier.height(24.dp))
+        Spacer(modifier = Modifier.height(12.dp))
         Button(onClick = { context.startActivity(Intent(context, Case3Activity::class.java)) }) {
             Text(text = stringResource(R.string.activity_case3_title))
         }
-        Spacer(modifier = Modifier.height(24.dp))
+        Spacer(modifier = Modifier.height(12.dp))
         Button(onClick = { context.startActivity(Intent(context, Case4Activity::class.java)) }) {
             Text(text = stringResource(R.string.activity_case4_title))
+        }
+        Spacer(modifier = Modifier.height(12.dp))
+        Button(onClick = { context.startActivity(Intent(context, Case5Activity::class.java)) }) {
+            Text(text = stringResource(R.string.activity_case5_title))
         }
     }
 }

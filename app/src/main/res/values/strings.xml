@@ -14,4 +14,7 @@
 
     <string name="activity_case4_title">Case #4</string>
     <string name="activity_case4_description">Activity -> Compose -> Compose -> ViewModel -> Model -> SharedPreference</string>
+
+    <string name="activity_case5_title">Case #5</string>
+    <string name="activity_case5_description">1. Activity -> Compose -> Compose -> ViewModel -> Model -> SharedPreference\n2. 멀티 모듈.</string>
 </resources>
