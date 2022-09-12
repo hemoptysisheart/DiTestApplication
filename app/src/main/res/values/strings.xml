@@ -18,6 +18,11 @@
     <string name="activity_case5_title">Case #5</string>
     <string name="activity_case5_description">1. Activity -> Compose -> Compose -> ViewModel -> Model -> SharedPreference\n2. 멀티 모듈.</string>
 
-    <string name="activity_grouped_setting_title">GroupedSettingActivity</string>
+    <string name="activity_grouped_setting_title">Grouped Setting</string>
     <string name="activity_grouped_setting_description">여러 개의 설정 항목을 가진 설정 그룹이 여럿 있을 때의 DI 방법.</string>
+
+    <string name="setting_auth">계정</string>
+    <string name="setting_auth_oidc">OIDC 설정</string>
+    <string name="setting_auth_oidc_authorized">유저</string>
+    <string name="setting_auth_oidc_unauthorized">게스트</string>
 </resources>

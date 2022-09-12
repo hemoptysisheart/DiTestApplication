@@ -54,4 +54,7 @@ class OidcAuthSettingImpl(
         editor.putString(KEY_REFRESH_TOKEN, null)
         editor.apply()
     }
+
+    override fun toString() =
+        "$TAG(initialized=$initialized, refreshToken=$refreshToken, idToken=$idToken, accessToken=$accessToken)"
 }

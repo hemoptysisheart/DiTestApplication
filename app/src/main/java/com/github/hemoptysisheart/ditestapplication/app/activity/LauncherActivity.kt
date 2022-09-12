@@ -62,6 +62,10 @@ fun LauncherCompose() {
         Button(onClick = { context.startActivity(Intent(context, Case5Activity::class.java)) }) {
             Text(text = stringResource(R.string.activity_case5_title))
         }
+        Spacer(modifier = Modifier.height(12.dp))
+        Button(onClick = { context.startActivity(Intent(context, GroupedSettingActivity::class.java)) }) {
+            Text(text = stringResource(R.string.activity_grouped_setting_title))
+        }
     }
 }
 
