@@ -47,5 +47,10 @@
             android:exported="false"
             android:label="@string/activity_case5_title"
             android:theme="@style/Theme.DiTestApplication" />
+        <activity
+            android:name=".app.activity.GroupedSettingActivity"
+            android:exported="false"
+            android:label="@string/activity_grouped_setting_title"
+            android:theme="@style/Theme.DiTestApplication" />
     </application>
 </manifest>
